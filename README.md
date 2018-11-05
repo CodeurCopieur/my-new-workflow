@@ -6,7 +6,7 @@ csso minifier le css <br/>
 browser-sync Static Server + watching scss/html files <br/>
 jade Compiler JADE vers HTML <br/>
 
-Tâche "build" ['css', 'serve']);
+Tâche "build" ['css', 'jade', 'serve']);
 
 Tâche "prod" = build + minify ['build', 'minify']);
 
