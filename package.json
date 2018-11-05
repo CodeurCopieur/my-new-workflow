@@ -1,0 +1,25 @@
+{
+  "name": "config_scss",
+  "version": "1.0.0",
+  "description": "config gul scss",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "codwerk",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-csso": "latest",
+    "gulp-sass": "latest",
+    "gulp-jade": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-plumber-notifier": "latest",
+    "browser-sync": "latest"
+  }
+}
