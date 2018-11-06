@@ -36,9 +36,8 @@ gulp.task('jade', function(){
     .pipe(plugins.jade({
         pretty: true
     }))
-    .pipe(gulp.dest(destination + '/html'))
+    .pipe(gulp.dest(destination))
 });
-
 
 //Comment exécuter cette tâche ? Tapez simplement : gulp minify
 gulp.task('minify', function() {
@@ -60,10 +59,10 @@ gulp.task('serve',function() {
         notify: true,
         port: 8001,
         open: "local",
-        startPath: "/html/hello.html"
+        startPath: "index.html"
     });
 
-    gulp.watch([source + '/assets/css/**/*.scss'], ['build']).on('change', browserSync.reload);
+    gulp.watch(source + '/assets/css/**/*.scss', ['build']).on('change', browserSync.reload);
    // gulp.watch(destination + '/index.html', ['build']).on('change', browserSync.reload);
    gulp.watch(source + '/html/**/**/*.jade', ['build']).on('change', browserSync.reload);
 });
